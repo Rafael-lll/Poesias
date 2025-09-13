@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafis Esculpido a Unic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <button id="theme-toggle">🌙</button>
+        <h1>Rima e Alma </h1>
+        <p> Deus, Paz e Poesia</p>
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="imagens/poesia1.jpg" alt="Poesia 1"  
+                 data-full-src="imagens/poesia1.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia2.jpg" alt="Poesia 2" data-full-src="imagens/poesia2.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+        
+            <div class="gallery-item">
+                <img src="imagens/poesia3.jpg" alt="Poesia 3" data-full-src="imagens/poesia3.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia4.jpg" alt="Poesia 4" data-full-src="imagens/poesia4.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia5.jfif" alt="Poesia 5" data-full-src="imagens/poesia5.jfif" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia6.jfif" alt="Poesia 6" data-full-src="imagens/poesia6.jfif" 
+                 onclick="openLightbox(this)">
+            </div>
+             <div class="gallery-item">
+                <img src="imagens/poesia7.jpg" alt="Poesia 7" data-full-src="imagens/poesia7.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia8.jpg" alt="Poesia 8" data-full-src="imagens/poesia8.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+        
+            <div class="gallery-item">
+                <img src="imagens/poesia9.jpg" alt="Poesia 9" data-full-src="imagens/poesia9.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia10.jpg" alt="Poesia 10" data-full-src="imagens/poesia10.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia11.jpg" alt="Poesia 11" data-full-src="imagens/poesia11.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="imagens/poesia12.jpg" alt="Poesia 12" data-full-src="imagens/poesia12.jpg" 
+                 onclick="openLightbox(this)">
+            </div>
+            </div>
+    </main>
+
+        <div id="lightbox-overlay" onclick="closeLightbox()">
+
+        <button id="prev-button" class="nav-button" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+
+        <img id="lightbox-image" src="" alt="Poesia em tamanho real">
+
+        <button id="next-button" class="nav-button" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
+
+        </div>
+    
+    <footer>
+        <div class="credits">
+           <p>Amar é o apíce da vida, quando o alcançar, não o largue</p>
+        </div>
+        <div class="footer-content">
+        <div class="qr-container">
+            <img src="imagens/frame.png" alt="QR Code para mais do poeta" class="qr-code"> 
+            <div class="qr-description">
+                <h3>Encosta no Insta!</h3>
+                <p>Aponte a câmera do seu celular para o código ao lado  para me seguir lá!</p>
+                <p>&copy; 2025 - Rafael Lucas © - @rafa.lucasxx - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
+
+
