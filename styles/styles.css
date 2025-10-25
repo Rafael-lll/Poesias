@@ -1,5 +1,5 @@
 body {
-    font-family: 'Georgia', serif;
+    font-family:'Merriweather', serif;
     margin: 0;
     background-color: antiquewhite;
     color: #333;
@@ -31,7 +31,7 @@ body.dark-mode main {
 }
 
 body.dark-mode {
-    background-color: #000000;
+    background-color: #121212;
     color: #cbd5e0;
 }
 
@@ -148,17 +148,18 @@ footer {
 
 .qr-description h3 {
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Merriweather', serif;
     color: #ffffff;
 }
 
 .qr-description p {
-    font-family: 'Lato', sans-serif;
+    font-family:'Merriweather', serif;
     line-height: 1.6;
     color: #ffffff; 
 }
 
 .credits {
+    font-family:'Merriweather', serif;
     text-align: center;
     padding-top: 1.5rem;
     font-size: 1.1rem;
@@ -297,4 +298,5 @@ footer {
         gap: 0.8rem; 
     }
 }
+
 
