@@ -26,7 +26,7 @@ body {
 }
 
 body.dark-mode main {
-    background-color: #000000;
+    background-color: #121212;
     color: #cbd5e0;
 }
 
@@ -298,5 +298,6 @@ footer {
         gap: 0.8rem; 
     }
 }
+
 
 
