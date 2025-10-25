@@ -4,6 +4,34 @@ const galleryImages = document.querySelectorAll('.gallery-item img');
 const lightboxOverlay = document.getElementById('lightbox-overlay');
 const lightboxImage = document.getElementById('lightbox-image');
 
+//Variaveis para mobile: funcao: "Arrastar"
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleTouchStart(event) {
+    
+    touchStartX = event.changedTouches[0].screenX;
+}
+
+function handleTouchEnd(event) {
+    
+    touchEndX = event.changedTouches[0].screenX;
+    handleSwipeGesture(); 
+}
+
+function handleSwipeGesture() {
+    const swipeThreshold = 50; 
+
+    
+    if (touchEndX < touchStartX - swipeThreshold) {
+        changeImage(1);
+    }
+    
+    
+    if (touchEndX > touchStartX + swipeThreshold) {
+        changeImage(-1);
+    }
+}
 
 function openLightbox(element) {
 
@@ -15,14 +43,24 @@ function openLightbox(element) {
     
 
     document.addEventListener('keydown', handleKeyboardNavigation);
+
+    document.body.style.overflow = 'hidden';
+
+    lightboxOverlay.addEventListener('touchstart', handleTouchStart, { passive: true });
+    lightboxOverlay.addEventListener('touchend', handleTouchEnd, { passive: true });
 }
+
 
 function closeLightbox() {
     lightboxOverlay.style.display = 'none';
-    
 
+    document.body.style.overflow = 'auto';
+    
     document.removeEventListener('keydown', handleKeyboardNavigation);
+    lightboxOverlay.removeEventListener('touchstart', handleTouchStart);
+    lightboxOverlay.removeEventListener('touchend', handleTouchEnd);
 }
+
 
 
 function updateLightboxImage() {
