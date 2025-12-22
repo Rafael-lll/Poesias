@@ -26,14 +26,15 @@ body {
 }
 
 body.dark-mode main {
-    background-color: #121212;
+    background-color: #232730;
     color: #cbd5e0;
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color: #232730;
     color: #cbd5e0;
 }
+
 
 body.dark-mode header,
 body.dark-mode footer {
@@ -298,6 +299,7 @@ footer {
         gap: 0.8rem; 
     }
 }
+
 
 
 
